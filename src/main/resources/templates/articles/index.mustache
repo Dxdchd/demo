@@ -1,5 +1,10 @@
 {{>layouts/header}}
 <table class="table">
+    {{#msg}}
+        <div class="alert alert-primary alert-dismissable">
+            <button type = "button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {{/msg}}
     <thead>
     <tr>
         <th scope="col">ID</th>
@@ -18,4 +23,5 @@
     </tbody>
 </table>
 <a href="articles/new">New Article</a>
+
 {{>layouts/footer}}
